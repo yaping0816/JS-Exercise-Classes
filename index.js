@@ -97,10 +97,15 @@ class Airplane {
     else if (drivableMiles <= distance){
       this.tank = 0;
       this.odometer += drivableMiles;
-      console.log(`I ran out of fuel at ${this.odometer}!`)
+      return `I ran out of fuel at ${this.odometer} miles!`;
     }
    }  
   }
+
+  const mine = new Car('Honda', 20);
+  console.log(mine.fill(10));
+  console.log(mine);
+  console.log(mine.drive(201));
   
   /*
     TASK 3
